@@ -5,18 +5,12 @@ print(" ")
 
 user_input = input("Would you like to use the calcultor (Y/N): ")
 
-# if user_input.lower() == "n":
-#     print("#####################")
-#     print("#                   #")
-#     print("# Ending Calculator #")
-#     print("#                   #")
-#     print("#####################")
-
-while user_input.lower() != "y" or user_input.lower() != "n":
+while user_input.lower() != "y" and user_input.lower() != "n":
     print('Error: Enter "Y" for Yes and "N" for No')
     print(" ")
     user_input = input("Would you like to use the calculator (Y/N): ")
     if user_input.lower() == "n":
+        print(" ")
         print("#######################")
         print("#######################")
         print("##                   ##")
@@ -29,7 +23,31 @@ while user_input.lower() != "y" or user_input.lower() != "n":
         print(" ")
         break
 
-number_1 = input("Choose first number: ")
+if user_input.lower() == "y":
+    pass
+elif user_input.lower() == "n":
+    print(" ")
+    print("#######################")
+    print("#######################")
+    print("##                   ##")
+    print("## Ending Calculator ##")
+    print("##                   ##")
+    print("#######################")
+    print("#######################")
+
+print('''Enter number and math operator as you would a calculator''')
+
+math_input = input()
+
+def calculator(math_input):
+    try:
+        results = eval(math_input)
+        return results
+    except (SyntaxError, NameError, TypeError) as e:
+        print(f"Error with math input: {e}")
+
+print(calculator(math_input))
+
 # operator = input("Choose operator: ")
 # number_2 = input("Choose second number: ")
 # proceed = input("Would you like to try again? ")
