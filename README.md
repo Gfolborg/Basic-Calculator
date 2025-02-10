@@ -1,7 +1,7 @@
 # Basic-Calculator
 
-This is just a basic calculator I decided to build on my own.
-The language used is python.
-This only demonstrates my fundamental knowledge of python and
-my ability to use version control and conduct research to build
-programs.
+This is just a basic calculator I decided to build as my first project.
+This calculator was built using python and is operated in the Linux CLI
+This demonstrates my fundamental knowledge of python and
+basic knowledge on using github. It also helped me to practice researching
+solutions.
